@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+.container{
+    max-width: 0 1100px;
+}
+
+
+.sec{
+    height: 800px;
+    width: 100%;
+}
