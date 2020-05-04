@@ -6,14 +6,32 @@
 body{
     scroll-behavior: smooth;
     max-width: 100%;
+    padding-top: 75px;
 }
+
 
 .container{
     max-width: 0 1100px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 
 .sec{
     height: 800px;
     width: 100%;
+}
+
+
+/* Form */
+ .form-control {
+    background: #F4F4F4;
+    margin-bottom: 16px;
+    border: #F4F4F4;
+    padding-left: 15px;
 }
