@@ -8,7 +8,7 @@
 }
 
 .header-container{
-  max-width: 1250px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -19,12 +19,13 @@
 }
 
 .log {
-  padding: 10px 15px;
+  padding: 0 15px;
 }
 
-.log h1 {
-  margin: 0;
+.log a{
+  font-size: 36px;
   color: #fff;
+  font-weight: 500;
 }
 
 .nav-bar {
@@ -45,7 +46,7 @@ ul li {
 .nav-bar a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
   padding: 18px 22px;
 }
@@ -72,12 +73,19 @@ ul li {
       justify-content: space-between;
   }
 
+  .log {
+    padding: 8px 15px;
+  }
+
+  .log a{
+    font-size: 28px;
+  }
+
   .nav-bar {
       position: absolute;
       left: 0;
       top: 56px;
       height: 0vh;
-      padding-right: 30px;
       background: #223;
       text-align: center;
       width: 100%;

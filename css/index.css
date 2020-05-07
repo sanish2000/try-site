@@ -1,20 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     scroll-behavior: smooth;
     max-width: 100%;
     padding-top: 75px;
 }
 
+.main {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
-.container{
+.container {
     max-width: 0 1100px;
 }
 
-.header{
+
+/* Basis */
+
+.sec {
+    height: 800px;
+    width: 100%;
+}
+
+.sub-header {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: black;
+}
+
+h2.section-header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------- */
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,14 +50,60 @@ body{
 }
 
 
-.sec{
-    height: 800px;
-    width: 100%;
+
+
+/* Skills */
+.progress-area {
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+
+.progress {
+    height: 16px;
+}
+
+
+
+.progress-bar.javascript {
+    width: 70%;
+}
+
+.progress-bar.html {
+    width: 86%;
+}
+
+.progress-bar.css {
+    width: 90%;
+}
+
+.progress-bar.photoshop {
+    width: 60%;
+}
+
+.progress-bar.react {
+    width: 70%;
+}
+
+.progress-bar.node {
+    width: 65%;
+}
+
+.progress-bar.mongodb {
+    width: 45%;
+}
+
+.progress-bar span {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 56px;
+    color: #222;
 }
 
 
 /* Form */
- .form-control {
+.form-control {
     background: #F4F4F4;
     margin-bottom: 16px;
     border: #F4F4F4;
