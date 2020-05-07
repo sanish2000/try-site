@@ -1,68 +1,114 @@
-.navigation-bar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .navigation-bar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navigation-bar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .navigation-bar a.active {
-    background-color: #4CAF50;
-    color: white;
+.header {
+  background: #15467A;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.log {
+  padding: 10px 15px;
+}
+
+.log h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.nav-bar {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 18px 22px;
+}
+
+.toggler {
+  display: none;
+  margin-right: 30px;
+}
+
+.toggler-bar {
+  background: #fff;
+  height: 2px;
+  width: 25px;
+}
+
+.mid-toggler {
+  margin: 5px 0
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .nav {
+      justify-content: space-between;
   }
 
-  .toggler{
-      display: none;
-  }
-  
-
-  .toggle-bar{
-    background: white;
-    height: 2px;
-    width: 37px;
-  }
-
-  .toggle-bar.mid{
-      margin: 8px 0;
-  }
-  .navigation-bar .icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navigation-bar a:not(:first-child) {display: none;}
-    .navigation-bar a.icon {
-      float: right;
-      display: block;
-    }
-
-    .toggler{
-        display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navigation-bar.responsive {position: relative;}
-    .navigation-bar.responsive .icon {
+  .nav-bar {
       position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navigation-bar.responsive a {
-      float: none;
+      left: 0;
+      top: 56px;
+      height: 0vh;
+      padding-right: 30px;
+      background: #223;
+      text-align: center;
+      width: 100%;
+      transition: ease-in-out 0.3s;
+      visibility: hidden;
+  }
+
+  .nav-bar li {
       display: block;
-      text-align: left;
-    }
+  }
+
+  .nav-bar a {
+      display: block;
+      padding: 10px;
+      width: 100%;
+      transition: ease-in-out 0.3s;
+  }
+
+  .nav-bar a:hover {
+      background: #ccc;
+      color: #223;
+
+  }
+
+  .toggler {
+      display: block;
+      float: right;
+  }
+
+  .nav-bar.responsive {
+      height: 100vh;
+      visibility: visible;
+  }
 }
